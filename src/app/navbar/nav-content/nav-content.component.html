@@ -1,11 +1,31 @@
 <div class="w-full">
-    <div class="bg-gray-950 text-white w-full h-1/2 shadow-lg p-6">
+    <div class="bg-gray-950 text-white w-full h-1/2 shadow-lg p-6 text-center ">
         <div class="flex justify-around">
-            <div class="flex flex-col " *ngFor="let item of category [selectedSection].sections"
-            >
-            <h1 class="text-center">
-{{item.name}}
-            </h1>
+            <div class="flex flex-col text-center" *ngFor="let item of category[selectedSection].sections">
+
+                <p class="text-[2rem] ">
+                    {{item.name}}
+                  </p>
+                  
+            <button class="text-[1rem]" mat-button *ngFor="let section of item.items">
+                {{section.name}}
+            </button>
+
+            </div>
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="rounded-md hover:scale-105 transition-all duration-500 cursor-pointer w-[15rem] h-[16rem] object-cover object-top" src="https://topitop.vteximg.com.br/arquivos/ids/366548-302-385/1729236_2.jpg?v=638630744066500000" alt="">
+                </div>
+                <p class="text-gray-600">Lo nuevo</p>
+            </div>
+            
+
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[15rem] h-[16rem] object-cover object-top rounded-md" src="https://topitop.vteximg.com.br/arquivos/ids/366548-302-385/1729236_2.jpg?v=638630744066500000" alt="">
+
+                </div>
+                <p class="text-gray-600">Lo nuevo</p>
 
             </div>
 
@@ -14,3 +34,4 @@
     </div>
 
 </div>
+

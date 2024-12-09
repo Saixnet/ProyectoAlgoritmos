@@ -1,5 +1,5 @@
-<div class="fixed top-0 z-50 right-0 left-0 bg-[#FFFFFF] text-gray-800 px-5 lg:px-20">
-  <div class="h-16 flex items-center justify-between">
+<div class=" fixed top-0 z-50 right-0 left-0 bg-[#FFFFFF] text-gray-800 ">
+  <div class="px-5 lg:px-20 h-16 flex items-center justify-between">
 
     <div class="flex items-center">
       <div class="mr-5">
@@ -13,18 +13,18 @@
         <div class="flex space-x-4">
           <a routerLink="/" class="text-gray-800">
             Comprando con Saixnet
-          </a>
+          </a> 
           <div>
-            <button class="open-button" (click)="openNavbarContent('Hombre')" mat-button>Hombre</button>
+            <button class="open-button" (click)="openNavbarContent('hombre')" mat-button>Hombre</button>
           </div>
           <div>
-            <button class="open-button" (click)="openNavbarContent('Mujer')" mat-button>Mujer</button>
+            <button class="open-button" (click)="openNavbarContent('mujer')" mat-button>Mujer</button>
           </div>
           <div>
-            <button class="open-button" (click)="openNavbarContent('Niño')" mat-button>Niño</button>
+            <button class="open-button" (click)="openNavbarContent('nino')" mat-button>Niño</button>
           </div>
           <div>
-            <button class="open-button" (click)="openNavbarContent('Niña')" mat-button>Niña</button>
+            <button class="open-button" (click)="openNavbarContent('nina')" mat-button>Niña</button>
           </div>  
 
         </div>
@@ -60,8 +60,9 @@
 
     </div>
   </div>
+  <div *ngIf="isNavbarContentOpen" class="absolute right-0 left-0 modal-container">
+    <app-nav-content [selectedSection]="currentSection"/>
+  
+  </div>
 </div>
-<div *ngIf="isNavbarContentOpen" class="modal-container">
-  <app-nav-content selectedSection="selectedSection"/>
 
-</div>

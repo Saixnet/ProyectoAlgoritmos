@@ -36,7 +36,7 @@ export const RopaHombres = [
     "titulo": "Polera Hombre Gabriel Core Lila Sombra",
     "color": "Lila",
     "descuento": 1299,
-    "precio": 109.90,
+    "precio": 119.90,
     "porcentajeDescuento": 40,
     "talla": [
       {
@@ -96,7 +96,7 @@ export const RopaHombres = [
     "titulo": "Polera Hombre Carlos Core Gris Fit Poly",
     "color": "Gris",
     "descuento": 1299,
-    "precio": 109.90,
+    "precio": 119.90,
     "porcentajeDescuento": 40,
     "talla": [
       {
@@ -127,7 +127,7 @@ export const RopaHombres = [
     "titulo": "Polera Hombre Gabriel Core Mostaza",
     "color": "Amarillo",
     "descuento": 1299,
-    "precio": 109.90,
+    "precio": 99.90,
     "porcentajeDescuento": 40,
     "talla": [
       {
