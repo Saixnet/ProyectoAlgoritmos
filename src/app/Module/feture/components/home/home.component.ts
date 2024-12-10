@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { MainCarouselComponent } from "./main-carousel/main-carousel.component";
 import { ProductSliderComponent } from "./product-slider/product-slider.component"; // Asegúrate de usar la ruta correcta
 import { HomeProductCardComponent } from "./home-product-card/home-product-card.component"; // Asegúrate de usar la ruta correcta
-import { RopaHombres } from '../../Data/Hombre/hombres'; // Verifica que la ruta sea correcta
-import { RopaMujeres } from '../../Data/Mujer/mujeres';
-import { RopaNinos } from '../../Data/Ninos/ninos';
-import { RopaNinas } from '../../Data/Ninas/ninas';
+import { RopaHombres } from '../../../../../Data/Hombre/hombres'; // Verifica que la ruta sea correcta
+import { RopaMujeres } from '../../../../../Data/Mujer/mujeres';
+import { RopaNinos } from '../../../../../Data/Ninos/ninos';
+import { RopaNinas } from '../../../../../Data/Ninas/ninas';
 
 @Component({
   selector: 'app-home',

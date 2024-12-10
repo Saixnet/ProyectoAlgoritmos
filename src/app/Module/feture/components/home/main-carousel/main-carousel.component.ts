@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common'; // Importa CommonModule
-import { homeCarouselData } from '../../../Data/mainCarouselData';
+import { homeCarouselData } from '../../../../../../Data/mainCarouselData';
 
 @Component({
   selector: 'app-main-carousel',
